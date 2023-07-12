@@ -17,9 +17,9 @@
         <main id="principal">
             <header>
                 <ul class="icones">
-                    <a href="https://github.com/kaio358" target="_blank"> <img  src="" alt="icone do github" srcset=" assets/imgs/icon/github-mark/github-mark.png, assets/imgs/icon/github-mark/github-mark.svg" class="icon icon_github"></a>
+                    <a href="https://github.com/kaio358" target="_blank"> <img  src="" alt="icone do github" srcset=" assets/imgs/icon/github-mark/github-mark.png, assets/imgs/icon/github-mark/github-mark.svg" class="icon icon_prin icon_github"></a>
                    
-                    <a href="https://www.linkedin.com/in/kaio-luiz-ferreira-9b16041ba/" target="_blank"> <img src="assets/imgs/icon/LinkedIn-Logos/li_redondo.png" alt="" srcset="" class="icon icon_linkedin"></a>
+                    <a href="https://www.linkedin.com/in/kaio-luiz-ferreira-9b16041ba/" target="_blank"> <img src="assets/imgs/icon/LinkedIn-Logos/li_redondo.png" alt="" srcset="" class="icon icon_prin icon_linkedin"></a>
                 </ul>
                 <nav id="menu">
                     <a href="#principal">Home</a>
@@ -34,7 +34,7 @@
               <h2>Ola,sou <span class="nome"> Kaio</span></h2>
               <h1>Desenvolvedor Full Stack</h1>
               <div class="um-pouco">
-                  <p>Tenho 23 anos sou desenvolvedor full stack com 2 anos trabalhando como freelancer</p>
+                  <p>Tenho 23 anos sou desenvolvedor full stack, já tinha inciado os estudos na area desde 2019 por meio de uma faculdade, sendo que parei em 2022 por N fatores, mas voltei com foco total neste ano !!!</p>
                   
               </div>
               <div class="area_copiar">
@@ -43,28 +43,63 @@
                 <button onclick="copiarTexto()">Copiar</button>
               </div>
             </div>
-           <canvas id="blocos" width="500" height="500"></canvas>
-
+            <div>
+              
+              <canvas id="blocos" width="500" height="500"></canvas>
+              <div id="aviso">
+               <h1>Aviso</h1>
+               <p>Os blocos podem ser movidos dentro da area !!!</p>
+               <button onclick="removeAviso()">OK</button>
+             </div>
+            </div>
           </section>
-          <div id="aviso">
-            <h1>Aviso</h1>
-            <p>Os blocos podem ser movidos dentro da area !!!</p>
-            <button onclick="removeAviso()">OK</button>
-          </div>
+          
         </main>
 
         <div id="tecnologias">
           <h1>Tecnologias</h1>
           <div class="icones">
-            <img src="assets/imgs/icon/ferramentas/react.png" alt="react">
-            <img src="assets/imgs/icon/ferramentas/html-5.png" alt="HTML">
-            <img src="assets/imgs/icon/ferramentas/nodejs.png" alt="nodejs">
-            <img src="assets/imgs/icon/ferramentas/mysql.png" alt="">
+            <a href="https://react.dev/learn" target="_blank"><img src="assets/imgs/icon/ferramentas/react.png" alt="react" class="icon" ></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img src="assets/imgs/icon/ferramentas/html-5.png" alt="HTML" class="icon"></a>
+            <a href="https://nodejs.org/en/docs" target="_blank" rel="">  <img src="assets/imgs/icon/ferramentas/nodejs.png" alt="nodejs" class="icon"></a>
+            <a href="https://docs.oracle.com/en-us/iaas/mysql-database/doc/getting-started.html" target="_blank"><img src="assets/imgs/icon/ferramentas/mysql_banco.png" alt="mysql" class="icon"></a>
+            
           </div>
         </div>
 
         <section id="projetos">
-           
+          <h1>Alguns Projetos</h1>
+          <div id="cards">
+            <div class="card">
+              <h2>Titulo....</h2>
+              <div class="descricao">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id omnis ipsa earum quos tempora temporibus, officia cum dolores officiis, nostrum dignissimos tenetur repellendus perspiciatis aperiam sunt, debitis quia voluptatum voluptatibus!
+              </div>
+              <div class="foto-projeto">
+                <img src="https://via.placeholder.com/320x480" alt="">
+              </div>
+              <div class="icones">
+                <img src="https://via.placeholder.com/64" alt="" class="icon">
+                <img src="https://via.placeholder.com/64" alt="" class="icon">
+                <img src="https://via.placeholder.com/64" alt="" class="icon">
+              </div>
+            </div>
+        
+            <div class="card">
+              <h2>Titulo....</h2>
+              <div class="descricao">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id omnis ipsa earum quos tempora temporibus, officia cum dolores officiis, nostrum dignissimos tenetur repellendus perspiciatis aperiam sunt, debitis quia voluptatum voluptatibus!
+              </div>
+              <div class="foto-projeto">
+                <img src="https://via.placeholder.com/320x480" alt="">
+              </div>
+              <div class="icones">
+                <img src="https://via.placeholder.com/64" alt="" class="icon">
+                <img src="https://via.placeholder.com/64" alt=""  class="icon">
+                <img src="https://via.placeholder.com/64" alt=""  class="icon">
+              </div>
+            </div>
+          </div>
         </section>
         <section id="contato">
 

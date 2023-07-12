@@ -5,6 +5,7 @@
 
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
@@ -18,10 +19,13 @@ header{
 }
 .icon{
     padding: 5px;
+    
+    border-radius: 50%;
+}
+.icon_prin{
     margin: 5px;
     width: 50px;
     border: 3px solid white;
-    border-radius: 50%;
 }
 
 #menu{
@@ -51,7 +55,7 @@ header{
 #centro_principal{
     display: flex;
     justify-content: space-evenly;
-    font-family: Arial, Helvetica, sans-serif;
+
     color: white;
     padding: 5px;
 
@@ -64,6 +68,8 @@ header{
 }
 .introducao p{
     font-size: 1.15vw;
+    width: 500px;
+    margin: 15px 0px 15px 0px;
 }
 .nome{
     color: var(--protoss-pylon);
@@ -98,9 +104,10 @@ header{
 #aviso{
     background-color: rgb(61, 61, 61);
     color: white;
-    width: 200px;
-    position: absolute;
-    right:  17vw;
+    width: 250px;
+    height: 190px;
+    position: relative;
+    left: 25%;
     padding: 5px;
     text-align: center;
 }
@@ -119,11 +126,47 @@ header{
     border: 2px solid black;
     border-style: dashed;
 
+
 }
+
 
 
 /*Tecnologias*/
 #tecnologias{
     margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
+}
+
+#tecnologias img{
+    width: 100px;
+    border: 2px solid var(--protoss-pylon) ;
+   
+
+    margin: 30px;
+}
+
+
+/* projetos */
+#projetos{
+    background-color:var(--protoss-pylon);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.card{
+    background-color: #0097e6;
+    padding: 20px;
+    width: 25vw;
+    border-radius: 5%;
+
+}
+.foto-projeto{
+    margin-top: 15px;
 }
