@@ -1,0 +1,129 @@
+:root{
+    --rise-n-shine :#fbc531;
+    --protoss-pylon : #00a8ff;
+}
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* menu  */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.icon{
+    padding: 5px;
+    margin: 5px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#menu{
+    align-self: center;
+    justify-self: center ;
+}
+#menu a{
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+    font-size: larger;
+}
+#menu a:hover{
+    color: var(--protoss-pylon);
+}
+
+/* um ola ...  */
+#principal{
+    background: url("../imgs/fundo/ondas/ondas_grande_2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120vh;
+    
+    padding: 5px;
+
+}
+#centro_principal{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px;
+
+}
+.introducao h1{
+    font-size: 3vw;
+}
+.introducao h2{
+    font-size: 2vw;
+}
+.introducao p{
+    font-size: 1.15vw;
+}
+.nome{
+    color: var(--protoss-pylon);
+    font-weight: bold;
+}
+/* email */
+.area_copiar #email,.area_copiar button{
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+
+}
+
+.area_copiar  button {
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: var(--protoss-pylon);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.area_copiar button:hover {
+    
+    background-color: #010d1f;
+    transition: 0.3s;
+}
+
+
+
+#aviso{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    width: 200px;
+    position: absolute;
+    right:  17vw;
+    padding: 5px;
+    text-align: center;
+}
+#aviso button{
+    cursor: pointer;
+    color: white;
+    background-color: var(--protoss-pylon);
+    width: 8vw;
+    padding: 10px;
+    border-color:var(--protoss-pylon);
+}
+
+/*area dos blocos*/
+
+#blocos{
+    border: 2px solid black;
+    border-style: dashed;
+
+}
+
+
+/*Tecnologias*/
+#tecnologias{
+    margin-top: 15px;
+    text-align: center;
+}

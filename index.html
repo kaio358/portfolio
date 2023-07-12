@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/versao_notebook.css">
+
+   
+
+    <title>Portfolio</title>
+</head>
+<body> 
+
+   
+        
+        <main id="principal">
+            <header>
+                <ul class="icones">
+                    <a href="https://github.com/kaio358" target="_blank"> <img  src="" alt="icone do github" srcset=" assets/imgs/icon/github-mark/github-mark.png, assets/imgs/icon/github-mark/github-mark.svg" class="icon icon_github"></a>
+                   
+                    <a href="https://www.linkedin.com/in/kaio-luiz-ferreira-9b16041ba/" target="_blank"> <img src="assets/imgs/icon/LinkedIn-Logos/li_redondo.png" alt="" srcset="" class="icon icon_linkedin"></a>
+                </ul>
+                <nav id="menu">
+                    <a href="#principal">Home</a>
+                    <a href="#tecnologias">Tecnologias</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                
+            </header>
+          <section id="centro_principal">
+            <div class="introducao">
+              <h2>Ola,sou <span class="nome"> Kaio</span></h2>
+              <h1>Desenvolvedor Full Stack</h1>
+              <div class="um-pouco">
+                  <p>Tenho 23 anos sou desenvolvedor full stack com 2 anos trabalhando como freelancer</p>
+                  
+              </div>
+              <div class="area_copiar">
+                
+                <input type="text" name="email" id="email" placeholder="" value="kaio.luiz358@gmail.com"  readonly/>
+                <button onclick="copiarTexto()">Copiar</button>
+              </div>
+            </div>
+           <canvas id="blocos" width="500" height="500"></canvas>
+
+          </section>
+          <div id="aviso">
+            <h1>Aviso</h1>
+            <p>Os blocos podem ser movidos dentro da area !!!</p>
+            <button onclick="removeAviso()">OK</button>
+          </div>
+        </main>
+
+        <div id="tecnologias">
+          <h1>Tecnologias</h1>
+          <div class="icones">
+            <img src="assets/imgs/icon/ferramentas/react.png" alt="react">
+            <img src="assets/imgs/icon/ferramentas/html-5.png" alt="HTML">
+            <img src="assets/imgs/icon/ferramentas/nodejs.png" alt="nodejs">
+            <img src="assets/imgs/icon/ferramentas/mysql.png" alt="">
+          </div>
+        </div>
+
+        <section id="projetos">
+           
+        </section>
+        <section id="contato">
+
+        </section>
+
+        <!-- scripts  -->
+        <script src="assets/script/eventos_click.js"></script>
+        <script src="assets/script/blocos.js"></script>
+</body>
+</html>
