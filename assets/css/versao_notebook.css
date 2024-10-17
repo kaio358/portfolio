@@ -9,6 +9,7 @@ body{
 }
 a{
     text-decoration: none;
+
 }
 
 /* menu  */
@@ -30,7 +31,7 @@ header{
 
 #menu{
     align-self: center;
-    justify-self: center ;
+    /* justify-self: center ; */
 }
 #menu a{
     cursor: pointer;
@@ -46,7 +47,7 @@ header{
 #principal{
     background: url("../imgs/fundo/ondas/ondas_grande_2.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 120vh;
     
     padding: 5px;
@@ -75,22 +76,32 @@ header{
     color: var(--protoss-pylon);
     font-weight: bold;
 }
+.area_copiar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
 /* email */
 .area_copiar #email,.area_copiar button{
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     border: none;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
 
 }
 
 .area_copiar  button {
     cursor: pointer;
-    margin-left: 10px;
     background-color: var(--protoss-pylon);
     color: white;
     text-transform: uppercase;
     transition: 0.3s;
+    width: auto;
+    padding: 10px 20px;
 }
 
 .area_copiar button:hover {
@@ -115,7 +126,7 @@ header{
     cursor: pointer;
     color: white;
     background-color: var(--protoss-pylon);
-    width: 8vw;
+    width: 80%;
     padding: 10px;
     border-color:var(--protoss-pylon);
 }
@@ -154,14 +165,17 @@ header{
     padding: 15px;
     text-align: center;
     margin-top: 20px;
+    
 }
 #cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 .card{
     background-color: #0097e6;
+    color: white;
     padding: 20px;
     width: 25vw;
     border-radius: 5%;
@@ -169,4 +183,102 @@ header{
 }
 .foto-projeto{
     margin-top: 15px;
+   
+}
+.images_projetos{
+    max-width: 380px;
+    max-height: 480px;
+
+}
+@media (max-width: 768px) {
+    #centro_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introducao p {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .icon_prin {
+        width: 40px;
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    #menu a {
+        font-size: medium;
+    }
+
+    .area_copiar #email,
+    .area_copiar button {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+/* Para smartphones (largura abaixo de 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #centro_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introducao h1 {
+        font-size: 5vw;
+    }
+
+    .introducao h2 {
+        font-size: 4vw;
+    }
+
+    .introducao p {
+        font-size: 4vw;
+        width: 90%;
+    }
+
+    .area_copiar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .area_copiar #email,
+    .area_copiar button {
+        font-size: 15px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .icon_prin {
+        width: 30px;
+    }
+
+    #blocos {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 90vw;
+        margin: 10px 0;
+    }
+
+    #menu a {
+        font-size: small;
+        margin: 10px 0;
+    }
 }
