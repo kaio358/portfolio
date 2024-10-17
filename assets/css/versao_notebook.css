@@ -9,6 +9,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: white;
 
 }
 
@@ -188,6 +189,10 @@ header{
 .images_projetos{
     max-width: 380px;
     max-height: 480px;
+
+}
+.icon_card{
+    width: 64px;
 
 }
 @media (max-width: 768px) {
